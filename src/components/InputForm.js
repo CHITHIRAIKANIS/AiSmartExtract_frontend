@@ -12,7 +12,7 @@ function InputForm({ onResult }) {
 
     setLoading(true); 
     try {
-      const response = await axios.post('http://localhost:5000/api/extract', {
+      const response = await axios.post('https://aismartextract-backend.onrender.com/api/extract', {
         url,
       });
 
